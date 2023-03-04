@@ -1,0 +1,57 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<main>
+
+    <!-- {% static 'main/images/my_face.jpg' %} -->
+    <div class="text-center">
+        <img height="600px" src="{% static 'main/images/my_face.jpg' %}" class="rounded" alt="...">
+    </div>
+    {% block about %}
+    <div class="after container">
+        <div class="row mb-2">
+            <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary"><a href="https://github.com/ak-xen">GitHub</a></strong>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a class="link-info" href="https://github.com/ak-xen/telega">Telegram
+                                bot made
+                                with aiogram</a></li>
+                            <li class="list-group-item"><a class="link-info"
+                                                           href="https://github.com/ak-xen/test_project">Test project
+                                (selenium, pytest)</a></li>
+                            <li class="list-group-item"><a class="link-info" href="https://github.com/ak-xen/PyExel">
+                                Script for parsing data from excel spreadsheet (pandas)</a></li>
+                            <li class="list-group-item"><a class="link-info" href="https://github.com/ak-xen/parser">Parser
+                                for vseinstrumenti.ru </a></li>
+                            <li class="list-group-item"><a class="link-info" href="https://github.com/ak-xen/Portfolio">My
+                                portfolio</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">My skills</strong>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Python</li>
+                            <li class="list-group-item">SQL</li>
+                            <li class="list-group-item">Django</li>
+                            <li class="list-group-item">DRF</li>
+                            <li class="list-group-item">Aiogram</li>
+                            <li class="list-group-item">Flask</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    {% endblock %}
+</main>
+
+{% endblock %}
